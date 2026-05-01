@@ -61,11 +61,13 @@ The access token is generated during login.
 - Authorization: Bearer <access_token>
 - Content-Type: application/json
 
+```
 {
 "name": "Laptop",
 "price": 1200,
 "seller_id": 2
 }
+```
 
 #  API Documentation
 
