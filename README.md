@@ -50,7 +50,7 @@
 - Uvicorn
 - JSON Web Token
 
-# Entities
+# Entities :
   
 ## User
 - id
@@ -101,7 +101,7 @@
 - updated_at
 
 # Mapping Entities
-- ## Cart - Product (CartItems)
+## Cart - Product (CartItems)
 - cart_id
 - product_id
 - quantity
@@ -115,6 +115,3 @@
 - price_at_purchase
 
 - This mapping stores the products purchased in each order.
-
-
-
