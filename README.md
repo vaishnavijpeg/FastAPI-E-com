@@ -50,4 +50,71 @@ Pydantic
 Uvicorn
 JSON Web Token
 
-- 
+- # Entities
+  
+- ## User
+id
+name
+email
+password (hashed)
+role (customer / seller)
+created_at
+updated_at
+
+- ## Product
+id
+name
+description
+price
+seller_id // reference to user
+created_at
+updated_at
+
+- ## Cart
+id
+user_id // reference to user
+created_at
+updated_at
+
+- ## CartItem
+id
+cart_id // reference to cart
+product_id // reference to product
+quantity
+created_at
+updated_at
+
+- ## Order
+id
+user_id // reference to user
+total_price
+created_at
+updated_at
+
+- ## OrderItem
+id
+order_id // reference to order
+product_id // reference to product
+quantity
+price_at_purchase
+created_at
+updated_at
+
+- # Mapping Entities
+- ## Cart - Product (CartItems)
+cart_id
+product_id
+quantity
+
+This mapping represents the many-to-many relationship between carts and products.
+
+- # Order - Product (OrderItems)
+order_id
+product_id
+quantity
+price_at_purchase
+
+This mapping stores the products purchased in each order.
+
+
+
